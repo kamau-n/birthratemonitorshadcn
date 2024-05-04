@@ -9,14 +9,14 @@ export default [
   js.configs.recommended,
   {
 
-  rules:{
-    "no-unused-vars": false,
-    "no-undef": false,
-    "no-unused-expressions": false,
+  // rules:{
+  //   "no-unused-vars": false,
+  //   "no-undef": false,
+  //   "no-unused-expressions": false,
     
 
     
 
-  }
+  // }
 }
 ];
