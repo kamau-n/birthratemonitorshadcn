@@ -26,38 +26,41 @@ export default function login() {
     var esLintTest = "This is a test";
 
     return (
-        <div className="flex justify-center items-center    h-screen">
-            <Tabs defaultValue="account" className="w-1/4 bg-slate-300 p-10 ">
-                <TabsList className="bg-blue-100">
-                    <TabsTrigger value="account">Login</TabsTrigger>
-                    <TabsTrigger value="password">Register</TabsTrigger>
-                </TabsList>
-                <TabsContent value="account">
-                    <h2>Login</h2>
-                    <Form {...loginForm}>
-                        <form
-                            onSubmit={loginForm.handleSubmit((data) =>
-                                console.log(data)
-                            )}
-                        >
+        <div className="flex justify-center items-center   h-screen">
+            <div>
+                <h3 className="scroll-m-20 text-xl text-center font-semibold tracking-tight">
+                    Create an Account
+                </h3>
+                <p className="text-gray-500 p-1 text-center text-sm">
+                    Enter your email to create account
+                </p>
+                <Form {...loginForm}>
+                    <form
+                        onSubmit={loginForm.handleSubmit((data) =>
+                            console.log(data)
+                        )}
+                    >
+                        <div className="py-2 px-2 ">
                             <FormField
                                 control={loginForm.control}
                                 name="email"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Email</FormLabel>
+                                        {/* <FormLabel>Email</FormLabel> */}
                                         <FormControl>
-                                            <Input placeholder="Email" />
+                                            <Input placeholder="name@example.com" />
                                         </FormControl>
                                     </FormItem>
                                 )}
                             />
+                        </div>
+                        <div className="py-2 px-2 ">
                             <FormField
                                 control={loginForm.control}
                                 name="password"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Password</FormLabel>
+                                        {/* <FormLabel>Password</FormLabel> */}
                                         <FormControl>
                                             <Input
                                                 placeholder="Password"
@@ -67,14 +70,28 @@ export default function login() {
                                     </FormItem>
                                 )}
                             />
-                            <Button type="submit">Submit</Button>
-                        </form>
-                    </Form>
-                </TabsContent>
-                <TabsContent value="password">
-                    Change your password here.
-                </TabsContent>
-            </Tabs>
+                        </div>
+                        <div className="p-2">
+                            <Button
+                                className="w-full"
+                                variant="secondary"
+                                type="submit"
+                            >
+                                Continue with Email
+                            </Button>
+                        </div>
+                        <div className="p-2">
+                            <Button
+                                className="w-full"
+                                variant="link"
+                                type="submit"
+                            >
+                                Reset Password
+                            </Button>
+                        </div>
+                    </form>
+                </Form>
+            </div>
         </div>
     );
 }
