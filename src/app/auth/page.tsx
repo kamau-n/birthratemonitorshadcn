@@ -23,7 +23,6 @@ export default function Login() {
             password: "",
         },
     });
-    var esLintTest = "This is a test";
 
     return (
         <div className="flex justify-center items-center   h-screen">

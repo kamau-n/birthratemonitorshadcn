@@ -9,14 +9,17 @@ export default [
   js.configs.recommended,
   {
 
-  // rules:{
+  rules:{
   //   "no-unused-vars": false,
   //   "no-undef": false,
   //   "no-unused-expressions": false,
-    
+  "react/no-unescaped-entities": "off",
+  "@next/next/no-page-custom-font": "off",
+  'react/display-name': 'off',
 
     
 
-  // }
-}
+  }
+
+  }
 ];
