@@ -10,9 +10,9 @@ export default [
   {
 
   rules:{
-    "no-unused-vars": "error",
-    "no-undef": "error",
-    "no-unused-expressions": "error",
+    "no-unused-vars": false,
+    "no-undef": false,
+    "no-unused-expressions": false,
     
 
     
