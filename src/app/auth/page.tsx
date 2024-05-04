@@ -15,7 +15,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
-export default function login() {
+export default function Login() {
     const loginForm = useForm<z.infer<typeof loginSchema>>({
         resolver: zodResolver(loginSchema),
         defaultValues: {
