@@ -1,14 +1,26 @@
-import { Button } from "@/components/ui/button";
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 import React from "react";
 
-const HomePage: React.FC = () => {
+export default function () {
     return (
-        <div className="flex justify-center align-middle h-full ">
-            <Button variant={"destructive"} size={"default"}>
-                Click me
-            </Button>
+        <div>
+            <NavigationMenu>
+                <NavigationMenuList>
+                    <NavigationMenuItem>
+                        <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                            <NavigationMenuLink>Link</NavigationMenuLink>
+                        </NavigationMenuContent>
+                    </NavigationMenuItem>
+                </NavigationMenuList>
+            </NavigationMenu>
         </div>
     );
-};
-
-export default HomePage;
+}
