@@ -24,21 +24,21 @@ export default function Login() {
         },
     });
 
+    function onSubmit(values: z.infer<typeof loginSchema>) {
+        console.log(values);
+    }
+
     return (
-        <div className="flex justify-center items-center   h-screen">
-            <div>
-                <h3 className="scroll-m-20 text-xl text-center font-semibold tracking-tight">
+        <div className="flex justify-center items-center    h-screen">
+            <div className="border-2 p-3 rounded-md">
+                <h3 className="scroll-m-20 text-xl text-center  font-semibold tracking-tight">
                     Create an Account
                 </h3>
                 <p className="text-gray-500 p-1 text-center text-sm">
                     Enter your email to create account
                 </p>
                 <Form {...loginForm}>
-                    <form
-                        onSubmit={loginForm.handleSubmit((data) =>
-                            console.log(data)
-                        )}
-                    >
+                    <form onSubmit={loginForm.handleSubmit(onSubmit)}>
                         <div className="py-2 px-2 ">
                             <FormField
                                 control={loginForm.control}
@@ -83,7 +83,7 @@ export default function Login() {
                             <Button
                                 className="w-full"
                                 variant="link"
-                                type="submit"
+                                type="reset"
                             >
                                 Reset Password
                             </Button>
