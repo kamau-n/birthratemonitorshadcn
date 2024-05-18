@@ -56,4 +56,46 @@ export const payments: Payment[] = [
         status: "processing",
         email: "okay@gmail.com",
     },
+
+    {
+        id: "489e1d42",
+        amount: 125,
+        status: "processing",
+        email: "okay@gmail.com",
+    },
+
+    {
+        id: "489e1d42",
+        amount: 1025,
+        status: "processing",
+        email: "okay@gmail.com",
+    },
+
+    {
+        id: "489e1d42",
+        amount: 1525,
+        status: "processing",
+        email: "okay@gmail.com",
+    },
+
+    {
+        id: "489e1d42",
+        amount: 1325,
+        status: "processing",
+        email: "okay@gmail.com",
+    },
+    {
+        id: "489e1d42",
+        amount: 1259,
+        status: "processing",
+        email: "aocto@gmail.com",
+    },
+    {
+        id: "489e1d42",
+        amount: 1256,
+        status: "processing",
+        email: "hex@gmail.com",
+    },
+
+
 ];
