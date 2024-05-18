@@ -14,14 +14,17 @@ import Link from "next/link";
 import { DataTable } from "./dashboard/data-table";
 import { payments } from "@/features/dashboards/types";
 import { columns } from "./dashboard/columns";
+import { Children, ReactNode } from "react";
 
-export default function Home() {
+export default function Home( ) {
+    
     return (
-        <main className="border-2  rounded-md">
+        <main className="border-2  rounded-md">  
+        
             <div className="flex justify-between p-2 m-2">
                 <div className="flex gap-3">
                     <h4>Home</h4>
-                    <Link href="/auth">Login</Link>
+                    <Link href="/auth">Login</Link>   
                     <h4>Settings</h4>
                 </div>
                 <div className="flex gap-3">
@@ -44,10 +47,8 @@ export default function Home() {
                         <h2 className="text-lg font-normal">DashBoard</h2>
                     </div>
                     <div className="basis-1/2 p-2">
-                        <h2 className="text-lg font-normal">
-                            Latest Admission
-                        </h2>
-                        <DataTable data={payments} columns={columns} />
+                        
+                      
                     </div>
                 </div>
             </div>
