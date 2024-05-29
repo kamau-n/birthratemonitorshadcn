@@ -2,7 +2,7 @@
 export default function DashboardPage () {
     return (
         <div>
-        Dashboards 
+        <h2>Dashboards</h2>
         </div>
     )
 }
