@@ -6,7 +6,8 @@ function UserTickets(props: Props) {
     const {} = props
 
     return (
-        <h2>Tickets</h2>
+        <h2>User Tickets</h2>
+        
     )
 }
 
