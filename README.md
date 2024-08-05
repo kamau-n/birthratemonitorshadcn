@@ -10,8 +10,7 @@ This application is build using next 14 and shadcn
 
 ### How to install Shadcn
 
-First create your next application
-eg
+First create your next application eg.
 
 ```
 npx create-next-app@latest
