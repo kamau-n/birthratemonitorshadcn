@@ -21,3 +21,4 @@ Then install the shadcn
 ```
 npx shadcn-ui@latest init
 ```
+
