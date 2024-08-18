@@ -1,4 +1,4 @@
-## Birth Rate Monotoring  Application
+# Birth Rate Monotoring  Application
 
 This application is build using next 14 and shadcn
 
