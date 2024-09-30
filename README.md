@@ -14,6 +14,7 @@ First create your next application eg.
 
 ```
 npx create-next-app@latest
+
 ```
 
 Then install the shadcn package
