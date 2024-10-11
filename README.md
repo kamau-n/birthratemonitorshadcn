@@ -13,7 +13,7 @@ This application is build using next 14 and shadcn
 First create your next application eg.
 
 ```
-npx create-next-app@latest
+npx create-next-app@latest 
 
 ```
 
