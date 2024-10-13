@@ -20,6 +20,6 @@ npx create-next-app@latest
 Then install the shadcn package
 
 ```
-npx shadcn-ui@latest init
+npx shadcn-ui@latest init  
 ```
 
